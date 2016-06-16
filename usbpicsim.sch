@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -178,18 +178,15 @@
 <wire x1="-2.2606" y1="-1.4478" x2="-2.2606" y2="-1.8034" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="-2.1082" x2="-2.2606" y2="-2.54" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="51" curve="-180"/>
-<text x="-3.6576" y="2.1844" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.8354" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">RefDes2</text>
+<text x="-3.8354" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">RefDes2</text>
 <wire x1="2.2606" y1="2.54" x2="0.3048" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="2.54" x2="-2.2606" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21" curve="-180"/>
-<text x="-3.6576" y="2.1844" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-5.2832" y="3.683" size="2.0828" layer="21" ratio="10" rot="SR0">RefDes</text>
-<text x="-2.794" y="-5.588" size="2.0828" layer="21" ratio="10" rot="SR0">DEV</text>
-<text x="-1.143" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">PN</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">DEV</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">VAL</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">TOL</text>
+<text x="-2.794" y="-5.588" size="2.0828" layer="150" ratio="10" rot="SR0">DEV</text>
+<text x="-1.143" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">PN</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">DEV</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">VAL</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">TOL</text>
 <wire x1="-2.2606" y1="1.8034" x2="-2.2606" y2="2.1082" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="2.1082" x2="-3.2004" y2="2.1082" width="0.1524" layer="51"/>
 <wire x1="-3.2004" y1="2.1082" x2="-3.2004" y2="1.8034" width="0.1524" layer="51"/>
@@ -251,12 +248,7 @@
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="51"/>
 <wire x1="-2.2606" y1="1.8034" x2="-2.2606" y2="-1.8034" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="51" curve="-180"/>
-<text x="-3.6576" y="2.1844" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-3.8354" y="-0.635" size="1.27" layer="51" ratio="6" rot="SR0">RefDes2</text>
-<wire x1="4.064" y1="-0.4572" x2="4.064" y2="-0.8382" width="0.1524" layer="49"/>
-<wire x1="4.064" y1="-0.8382" x2="3.81" y2="-0.8382" width="0.1524" layer="49"/>
-<wire x1="3.81" y1="-0.8382" x2="3.81" y2="-0.4572" width="0.1524" layer="49"/>
-<wire x1="3.81" y1="-0.4572" x2="4.064" y2="-0.4572" width="0.1524" layer="49"/>
+<text x="-3.8354" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">RefDes2</text>
 <wire x1="-3.81" y1="-2.794" x2="-3.81" y2="2.794" width="0.1524" layer="39"/>
 <wire x1="-3.81" y1="2.794" x2="3.81" y2="2.794" width="0.1524" layer="39"/>
 <wire x1="3.81" y1="2.794" x2="3.81" y2="-2.794" width="0.1524" layer="39"/>
@@ -264,13 +256,12 @@
 <wire x1="-2.2606" y1="-2.54" x2="2.2606" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="2.54" x2="-0.3048" y2="2.54" width="0.1524" layer="21" curve="-180"/>
-<text x="-3.6576" y="2.1844" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-5.2832" y="3.683" size="2.0828" layer="21" ratio="10" rot="SR0">RefDes</text>
-<text x="-2.794" y="-5.588" size="2.0828" layer="21" ratio="10" rot="SR0">DEV</text>
-<text x="-1.143" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">PN</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">DEV</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">VAL</text>
-<text x="-1.7272" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">TOL</text>
+<text x="-5.2832" y="3.683" size="2.0828" layer="150" ratio="10" rot="SR0">RefDes</text>
+<text x="-2.794" y="-5.588" size="2.0828" layer="150" ratio="10" rot="SR0">DEV</text>
+<text x="-1.143" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">PN</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">DEV</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">VAL</text>
+<text x="-1.7272" y="-0.635" size="1.27" layer="150" ratio="6" rot="SR0">TOL</text>
 </package>
 <package name="SIM_8XPADS">
 <wire x1="-1.0319" y1="4.2863" x2="14.605" y2="4.2863" width="0.127" layer="21"/>
@@ -7103,7 +7094,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="RA3@2" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -7132,7 +7123,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="RA3@1" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
