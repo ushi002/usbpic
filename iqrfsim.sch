@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -176,11 +176,6 @@
 </package>
 </packages>
 <symbols>
-<symbol name="GND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 <symbol name="SIM_8X">
 <wire x1="-11.43" y1="3.81" x2="16.51" y2="3.81" width="0.254" layer="94"/>
 <wire x1="16.51" y1="3.81" x2="16.51" y2="-11.43" width="0.254" layer="94"/>
@@ -235,19 +230,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="SIM_8X" prefix="XC">
 <gates>
 <gate name="G$1" symbol="SIM_8X" x="-5.08" y="7.62"/>
@@ -265,54 +247,6 @@
 <connect gate="G$1" pin="C8" pad="8"/>
 <connect gate="G$1" pin="P$1" pad="CS1"/>
 <connect gate="G$1" pin="P$2" pad="CS2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="wirepad">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="1,6/0,9">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="-0.508" y1="0.762" x2="-0.762" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-0.762" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="-0.762" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.508" x2="0.762" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
-<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="1,6/0,9" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1,6/0,9">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -544,11 +478,6 @@ diameter 4.5 mm, grid 5.08 mm</description>
 </class>
 </classes>
 <parts>
-<part name="GND1" library="usbpiclib" deviceset="GND" device=""/>
-<part name="PAD1" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD2" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD3" library="wirepad" deviceset="1,6/0,9" device=""/>
-<part name="PAD4" library="wirepad" deviceset="1,6/0,9" device=""/>
 <part name="XC1" library="usbpiclib" deviceset="SIM_8X" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
@@ -557,14 +486,8 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <sheets>
 <sheet>
 <plain>
-<text x="-127" y="30.48" size="1.778" layer="91" rot="R90">USB, add 1.4mm holes for wires</text>
 </plain>
 <instances>
-<instance part="GND1" gate="1" x="-111.76" y="30.48"/>
-<instance part="PAD1" gate="1" x="-121.92" y="58.42"/>
-<instance part="PAD2" gate="1" x="-121.92" y="53.34"/>
-<instance part="PAD3" gate="1" x="-121.92" y="45.72"/>
-<instance part="PAD4" gate="1" x="-121.92" y="40.64"/>
 <instance part="XC1" gate="G$1" x="33.02" y="63.5"/>
 <instance part="JP2" gate="A" x="85.09" y="59.69"/>
 <instance part="JP1" gate="A" x="-5.08" y="59.69" rot="MR0"/>
@@ -573,37 +496,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="PAD4" gate="1" pin="P"/>
-<wire x1="-119.38" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="40.64" x2="-111.76" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="PAD3" gate="1" pin="P"/>
-<wire x1="-119.38" y1="45.72" x2="-111.76" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="45.72" x2="-111.76" y2="48.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="PAD2" gate="1" pin="P"/>
-<wire x1="-119.38" y1="53.34" x2="-111.76" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="53.34" x2="-111.76" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<wire x1="-111.76" y1="68.58" x2="-109.22" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="58.42" x2="-111.76" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="PAD1" gate="1" pin="P"/>
-<wire x1="-119.38" y1="58.42" x2="-111.76" y2="58.42" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="IO/SPI_SDI" class="0">
+<net name="IO/SDO" class="0">
 <segment>
 <label x="3.81" y="57.15" size="1.778" layer="95"/>
 <pinref part="XC1" gate="G$1" pin="C8"/>
@@ -611,7 +504,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <pinref part="JP1" gate="A" pin="4"/>
 </segment>
 </net>
-<net name="IO/SPI_CLK" class="0">
+<net name="IO/CLK" class="0">
 <segment>
 <label x="3.81" y="62.23" size="1.778" layer="95"/>
 <pinref part="XC1" gate="G$1" pin="C6"/>
@@ -619,7 +512,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <pinref part="JP1" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="IO/SPI_SDO" class="0">
+<net name="IO/SDI" class="0">
 <segment>
 <label x="3.81" y="59.69" size="1.778" layer="95"/>
 <pinref part="XC1" gate="G$1" pin="C7"/>
@@ -627,7 +520,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <pinref part="JP1" gate="A" pin="3"/>
 </segment>
 </net>
-<net name="IO/SPI_!SS" class="0">
+<net name="IO/!SS" class="0">
 <segment>
 <label x="3.81" y="64.77" size="1.778" layer="95"/>
 <wire x1="-2.54" y1="64.77" x2="19.05" y2="64.77" width="0.1524" layer="91"/>
@@ -635,7 +528,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <pinref part="JP1" gate="A" pin="1"/>
 </segment>
 </net>
-<net name="+3V/IO" class="0">
+<net name="IO/+3V" class="0">
 <segment>
 <pinref part="XC1" gate="G$1" pin="C2"/>
 <label x="63.5" y="62.23" size="1.778" layer="95"/>
@@ -643,7 +536,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <wire x1="52.07" y1="62.23" x2="82.55" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ADC/IO" class="0">
+<net name="IO/ADC" class="0">
 <segment>
 <pinref part="XC1" gate="G$1" pin="C1"/>
 <label x="63.5" y="64.77" size="1.778" layer="95"/>
@@ -651,7 +544,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <wire x1="52.07" y1="64.77" x2="82.55" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="VIN" class="0">
 <segment>
 <wire x1="55.88" y1="71.12" x2="55.88" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="XC1" gate="G$1" pin="C3"/>
@@ -664,7 +557,7 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <wire x1="97.79" y1="71.12" x2="97.79" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="GND" class="0">
 <segment>
 <pinref part="XC1" gate="G$1" pin="C4"/>
 <wire x1="52.07" y1="57.15" x2="55.88" y2="57.15" width="0.1524" layer="91"/>
