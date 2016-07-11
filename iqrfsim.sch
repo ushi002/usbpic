@@ -384,81 +384,45 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="tagps">
+<library name="wirepad">
+<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="BATHOLD2AA">
-<pad name="+" x="-27.18" y="7.5" drill="1.02"/>
-<pad name="-" x="-27.18" y="-7.5" drill="1.02" shape="square"/>
-<hole x="0" y="7.5" drill="3.3"/>
-<hole x="0" y="-7.5" drill="3.3"/>
-<wire x1="30" y1="16.5" x2="30" y2="-16.5" width="0.127" layer="51"/>
-<wire x1="-30" y1="16.5" x2="-30" y2="-16.5" width="0.127" layer="51"/>
-<wire x1="-30" y1="-16.5" x2="30" y2="-16.5" width="0.127" layer="51"/>
-<wire x1="-30" y1="16.5" x2="30" y2="16.5" width="0.127" layer="51"/>
-</package>
-<package name="TAP5-45">
-<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
-diameter 4.5 mm, grid 5.08 mm</description>
-<wire x1="-1.397" y1="0" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0" x2="-0.508" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="-0.635" x2="-0.1778" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.1778" y1="-0.635" x2="-0.1778" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-0.1778" y1="0.635" x2="-0.508" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="0.635" x2="-0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="0" x2="1.397" y2="0" width="0.1524" layer="21"/>
-<wire x1="-1.143" y1="0.381" x2="-1.143" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="-0.889" y1="0.635" x2="-1.397" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0.1778" y1="0.635" x2="0.1778" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="0.635" x2="0.1778" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0.1778" y1="-0.635" x2="0.508" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="-0.635" x2="0.508" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="0" x2="0.508" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="0.3302" y1="-0.508" x2="0.3302" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="-1.9144" y1="-1.2492" x2="1.9144" y2="-1.2492" width="0.1524" layer="21" curve="113.748837"/>
-<wire x1="-1.9144" y1="1.2492" x2="1.9144" y2="1.2492" width="0.1524" layer="21" curve="-113.748837"/>
-<wire x1="-1.9144" y1="1.2492" x2="-1.9144" y2="-1.2492" width="0.1524" layer="51" curve="66.251163"/>
-<wire x1="1.9144" y1="-1.2492" x2="1.9144" y2="1.2492" width="0.1524" layer="51" curve="66.251163"/>
-<pad name="-" x="3.81" y="0" drill="0.8128" shape="octagon"/>
-<pad name="+" x="-2.54" y="0" drill="0.8128"/>
-<text x="2.286" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="2.286" y="-2.286" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.889" y="-1.905" size="0.9906" layer="21" ratio="12">TT</text>
+<package name="1,6/0,9">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
+<wire x1="-0.508" y1="0.762" x2="-0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="0.762" x2="-0.762" y2="0.508" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.508" x2="-0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-0.762" x2="-0.508" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="-0.762" x2="0.762" y2="-0.508" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.508" x2="0.762" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="0.762" x2="0.508" y2="0.762" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
+<pad name="1" x="0" y="0" drill="0.9144" diameter="1.6002" shape="octagon"/>
+<text x="-0.762" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="1V2">
-<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.4064" layer="94"/>
-<wire x1="0.635" y1="2.54" x2="0.635" y2="0" width="0.4064" layer="94"/>
-<wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<symbol name="PAD">
+<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
+<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BATTERY" prefix="G">
-<description>&lt;b&gt;LI BATTERY&lt;/b&gt; Sonnenschein</description>
+<deviceset name="1,6/0,9" prefix="PAD" uservalue="yes">
+<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="1V2" x="0" y="0"/>
+<gate name="1" symbol="PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="BATHOLD2AA">
+<device name="" package="1,6/0,9">
 <connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TAP5-45" package="TAP5-45">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="1" pin="P" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -481,7 +445,8 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <part name="XC1" library="usbpiclib" deviceset="SIM_8X" device=""/>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="G1" library="tagps" deviceset="BATTERY" device="TAP5-45"/>
+<part name="VIN" library="wirepad" deviceset="1,6/0,9" device=""/>
+<part name="GND" library="wirepad" deviceset="1,6/0,9" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -491,7 +456,8 @@ diameter 4.5 mm, grid 5.08 mm</description>
 <instance part="XC1" gate="G$1" x="33.02" y="63.5"/>
 <instance part="JP2" gate="A" x="85.09" y="59.69"/>
 <instance part="JP1" gate="A" x="-5.08" y="59.69" rot="MR0"/>
-<instance part="G1" gate="G$1" x="97.79" y="60.96" rot="R90"/>
+<instance part="VIN" gate="1" x="55.88" y="71.12" rot="R270"/>
+<instance part="GND" gate="1" x="55.88" y="48.26" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -546,28 +512,24 @@ diameter 4.5 mm, grid 5.08 mm</description>
 </net>
 <net name="VIN" class="0">
 <segment>
-<wire x1="55.88" y1="71.12" x2="55.88" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="68.58" x2="55.88" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="XC1" gate="G$1" pin="C3"/>
 <wire x1="52.07" y1="59.69" x2="55.88" y2="59.69" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="59.69" x2="82.55" y2="59.69" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="3"/>
 <junction x="55.88" y="59.69"/>
-<pinref part="G1" gate="G$1" pin="+"/>
-<wire x1="55.88" y1="71.12" x2="97.79" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="71.12" x2="97.79" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="VIN" gate="1" pin="P"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="XC1" gate="G$1" pin="C4"/>
 <wire x1="52.07" y1="57.15" x2="55.88" y2="57.15" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="57.15" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="57.15" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="A" pin="4"/>
 <wire x1="55.88" y1="57.15" x2="82.55" y2="57.15" width="0.1524" layer="91"/>
 <junction x="55.88" y="57.15"/>
-<pinref part="G1" gate="G$1" pin="-"/>
-<wire x1="55.88" y1="48.26" x2="97.79" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="97.79" y1="48.26" x2="97.79" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="GND" gate="1" pin="P"/>
 </segment>
 </net>
 </nets>
