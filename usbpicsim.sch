@@ -6808,6 +6808,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <pinref part="PAD4" gate="1" pin="P"/>
 <wire x1="-119.38" y1="40.64" x2="-111.76" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="-111.76" y1="40.64" x2="-111.76" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-111.76" y="35.56"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
