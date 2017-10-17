@@ -6757,6 +6757,7 @@ Source: Fairchild .. BAT54.pdf</description>
 <sheet>
 <plain>
 <text x="-127" y="30.48" size="1.778" layer="91" rot="R90">USB, add 1.4mm holes for wires</text>
+<text x="-121.92" y="91.44" size="1.778" layer="91">Pridat diodu jako ochranu proti prepolovani</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="30.48" y="53.34"/>
